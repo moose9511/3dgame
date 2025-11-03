@@ -1,0 +1,26 @@
+# Simple pyramid model
+
+v 0.0 1.0 0.0       
+# Top vertex
+v -1.0 0.0 -1.0     
+# Base - back left
+v 1.0 0.0 -1.0      
+# Base - back right
+v 1.0 0.0 1.0       
+# Base - front right
+v -1.0 0.0 1.0      
+# Base - front left
+
+# Faces (triangles)
+f 1 2 3             
+# Side 1
+f 1 3 4             
+# Side 2
+f 1 4 5             
+# Side 3
+f 1 5 2             
+# Side 4
+f 2 3 4             
+# Base triangle 1
+f 2 4 5             
+# Base triangle 2

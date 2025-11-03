@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.yourname.game</groupId>
+    <artifactId>my3dgame</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    
+    <properties>
+        <lwjgl.version>3.3.3</lwjgl.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <dependencies>
+    <!-- LWJGL Core -->
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl</artifactId>
+        <version>${lwjgl.version}</version>
+    </dependency>
+    
+    <!-- GLFW (window/input) -->
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl-glfw</artifactId>
+        <version>${lwjgl.version}</version>
+    </dependency>
+    
+    <!-- OpenGL bindings -->
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl-opengl</artifactId>
+        <version>${lwjgl.version}</version>
+    </dependency>
+    
+    <!-- NATIVES for Windows -->
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl</artifactId>
+        <version>${lwjgl.version}</version>
+        <classifier>natives-windows</classifier>
+    </dependency>
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl-glfw</artifactId>
+        <version>${lwjgl.version}</version>
+        <classifier>natives-windows</classifier>
+    </dependency>
+    <dependency>
+        <groupId>org.lwjgl</groupId>
+        <artifactId>lwjgl-opengl</artifactId>
+        <version>${lwjgl.version}</version>
+        <classifier>natives-windows</classifier>
+    </dependency>
+</dependencies>
+</project>
